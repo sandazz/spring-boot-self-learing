@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" th:action="@{/create}" th:object="${students}" method="post">
+        <span>name :</span><input type="text" name="" id="" th:field="*{name}"><br>
+        <span>age :</span><input type="text" name="" id="" th:field="*{age}"><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset"><br>
+
+
+
+    </form>
+
+</body>
+
+</html>
